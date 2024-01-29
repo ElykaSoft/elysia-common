@@ -17,22 +17,76 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class ElysiaUserInfo extends BaseDao {
-    private String id;// ID
-    private String firstname;// 用户姓氏
-    private String lastname;// 用户姓名
-    private Byte gender;// 性别
-    private String birthdate;// 生日
-    private String email;// 邮箱
-    private String phone;// 联系方式
-    private String country;// 国家地区
-    private String nativePlace;// 籍贯
-    private String address;// 居住地
-    private String postcode;// 居住地邮编
-    private String avatar;// 头像
-    private String createUser;// 创建用户
-    private String createDate;// 创建日期
-    private String createTime;// 创建时间
-    private String updateUser;// 更新用户
-    private String updateDate;// 更新日期
-    private String updateTime;// 更新时间
+    /**
+     * @description: 用户ID
+     **/
+    private String id;
+    /**
+     * @description: 用户姓氏
+     **/
+    private String firstname;
+    /**
+     * @description: 用户姓名
+     **/
+    private String lastname;
+    /**
+     * @description: 性别
+     **/
+    private Byte gender;
+    /**
+     * @description: 生日
+     **/
+    private String birthdate;
+    /**
+     * @description: 邮箱
+     **/
+    private String email;
+    /**
+     * @description: 联系方式
+     **/
+    private String phone;
+    /**
+     * @description: 国家地区
+     **/
+    private String country;
+    /**
+     * @description: 籍贯
+     **/
+    private String nativePlace;
+    /**
+     * @description: 居住地
+     **/
+    private String address;
+    /**
+     * @description: 居住地邮编
+     **/
+    private String postcode;
+    /**
+     * @description: 头像
+     **/
+    private String avatar;
+    /**
+     * @description: 创建用户
+     **/
+    private String createUser;
+    /**
+     * @description: 创建日期
+     **/
+    private String createDate;
+    /**
+     * @description: 创建时间
+     **/
+    private String createTime;
+    /**
+     * @description: 更新用户
+     **/
+    private String updateUser;
+    /**
+     * @description: 更新日期
+     **/
+    private String updateDate;
+    /**
+     * @description: 更新时间
+     **/
+    private String updateTime;
 }
