@@ -2,6 +2,7 @@ package com.elysia.common.pojo.dao;
 
 import com.elysia.common.base.BaseDao;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -16,6 +17,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 public class ElysiaUser extends BaseDao {
     private String id;// ID
     private String username;// 用户名
