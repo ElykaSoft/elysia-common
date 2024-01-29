@@ -10,7 +10,6 @@ public class DateUtils {
     private static final String CUSTOM_FORMAT = "yyyy-MM-dd";// 通常的日期格式化格式2000-00-00
     private static final String DETAIL_FORMAT = "yyyy-MM-dd HH:mm:ss";// 带时间详情的格式方式2000-00-00
     private static final String SHORT_YEAR_FORMAT = "yy-MM-d HH:mm";// 采取年简短月简短，不显示秒
-
     private static final String LSH_FORMAT = "yyyyMMdd";// 简洁的格式化方式20000000
     private static final String DETAIL_LSH_FORMAT = "yyyyMMddHHmmss";// 带有详情的时间格式化方式
     private static final String SHORT_FORMAT = "yyMMdd";// 简短的时间格式方式000000
