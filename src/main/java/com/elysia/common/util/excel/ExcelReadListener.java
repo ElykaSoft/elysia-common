@@ -7,6 +7,7 @@ import org.apache.commons.lang3.StringUtils;
 
 import java.io.File;
 import java.lang.reflect.Field;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -24,15 +25,14 @@ public class ExcelReadListener extends AnalysisEventListener<StockExcelModel> {
 
     private String readSheetName;
 
-    private List<StockExcelModel> stockExcelModelList;
+    private static List<StockExcelModel> stockExcelModelList = new ArrayList<>();
 
     private static StockExcelModel tempModel;
 
-    public ExcelReadListener(String readFilePath, String readWorkBookName, String readSheetName, List<StockExcelModel> stockExcelModelList) {
+    public ExcelReadListener(String readFilePath, String readWorkBookName, String readSheetName) {
         this.readFilePath = readFilePath;
         this.readWorkBookName = readWorkBookName;
         this.readSheetName = readSheetName;
-        this.stockExcelModelList = stockExcelModelList;
     }
 
     @Override
@@ -74,6 +74,7 @@ public class ExcelReadListener extends AnalysisEventListener<StockExcelModel> {
             String writeFilePath = readFilePath + File.separator + "write";
             ExcelWriteHandler excelWriteHandler = new ExcelWriteHandler(writeFilePath, readWorkBookName, readSheetName, stockExcelModelList);
             excelWriteHandler.writeDataToExcel();
+            stockExcelModelList.clear();
         } catch (Exception e) {
             throw new RuntimeException(e);
         }

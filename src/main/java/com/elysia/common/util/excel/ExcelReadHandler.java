@@ -24,9 +24,8 @@ public class ExcelReadHandler {
 
     private String readSheetName;
 
-    private List<StockExcelModel> stockExcelModelList;
     public void readExcel(String filePath) {
-        ExcelReadListener excelReadListener = new ExcelReadListener(readFilePath, readWorkBookName, readSheetName, stockExcelModelList);
+        ExcelReadListener excelReadListener = new ExcelReadListener(readFilePath, readWorkBookName, readSheetName);
         // 注册excel读取监听器进行数据解析，根据指定数据模板，读取指定文件对象
         ExcelReaderBuilder excelReaderBuilder = EasyExcel.read(filePath, StockExcelModel.class, excelReadListener);
         // 自动关闭流
