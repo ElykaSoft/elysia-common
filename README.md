@@ -8,8 +8,8 @@
 {
   "elysia-common": {
     "version": "1.2.4-SNAPSHOT",
-    "jdk": "1.8",
-    "maven-compiler": "8",
+    "jdk": "17",
+    "maven-compiler": "17",
     "dependencies": {
       "spring-boot-devtools": "2.7.17",
       "lombok": "1.18.30",
@@ -21,6 +21,8 @@
         }
       },
       "fastjson2": "2.0.37",
+      "jackson-databind": "2.15.2",
+      "gson": "2.10.1",
       "java-jwt": "4.3.0",
       "junit": "4.13.2",
       "easyexcel": "2.1.7",
