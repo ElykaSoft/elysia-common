@@ -21,6 +21,8 @@
         }
       },
       "fastjson2": "2.0.37",
+      "jackson-databind": "2.15.2",
+      "gson": "2.10.1",
       "java-jwt": "4.3.0",
       "junit": "4.13.2",
       "easyexcel": "2.1.7",
