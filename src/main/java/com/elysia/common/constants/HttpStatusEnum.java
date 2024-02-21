@@ -1,7 +1,5 @@
 package com.elysia.common.constants;
 
-import org.junit.rules.Timeout;
-
 /**
  * @BelongsProject: elysia-common
  * @BelongsPackage: com.elysia.common.constants
