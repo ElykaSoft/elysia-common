@@ -1,6 +1,6 @@
 package com.elysia.common.constants;
 
-import org.junit.rules.Timeout;
+import lombok.Getter;
 
 /**
  * @BelongsProject: elysia-common
@@ -10,6 +10,7 @@ import org.junit.rules.Timeout;
  * @Description: TODO
  * @Version: 1.0
  */
+@Getter
 public enum HttpStatusEnum {
     CONTINUE(100, "Continue", "请继续发送请求的剩余部分"),
     SWITCHING_PROTOCOLS(101, "Switching Protocols", "协议切换"),
@@ -79,30 +80,6 @@ public enum HttpStatusEnum {
     HttpStatusEnum(int code, String enMessage, String zhMessage) {
         this.code = code;
         this.enMessage = enMessage;
-        this.zhMessage = zhMessage;
-    }
-
-    public int getCode() {
-        return code;
-    }
-
-    public void setCode(int code) {
-        this.code = code;
-    }
-
-    public String getEnMessage() {
-        return enMessage;
-    }
-
-    public void setEnMessage(String enMessage) {
-        this.enMessage = enMessage;
-    }
-
-    public String getZhMessage() {
-        return zhMessage;
-    }
-
-    public void setZhMessage(String zhMessage) {
         this.zhMessage = zhMessage;
     }
 }
